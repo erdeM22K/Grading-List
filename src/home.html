@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grading-Game-List</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/src/home.css">
 </head>
 <body>
     <header>
         <h1>Grading-Game-List</h1>
-        <p>by erdeM</p>
+        <p>by erdeM </p>
+        <nav class="header-nav">
+            <a href="#">Home</a>
+            <a href="#">Über uns</a>
+            <a href="#">Kontakt</a>
+        </nav>
     </header>
 
     <!-- Weitere Zeile mit jeweils zwei Spielen hinzufügen -->
@@ -39,19 +44,20 @@
         <div class="game-item">
             <div class="game-item-image">
                 <button class="arrow left-arrow" onclick="changeImage(-1, 'game2')">&#10094;</button>
-                <img src="/assets/tlou_1.png" id="game2-image" alt="Spiel 2">
+                <img src="/assets/minecraft_1.jpg" id="game2-image" alt="Minecraft">
                 <button class="arrow right-arrow" onclick="changeImage(1, 'game2')">&#10095;</button>
             </div>
             <div class="game-item-description">
-                <p class="title"><b>Titel:</b> Spiel 2</p>
-                <p><b>Erscheinungsjahr:</b> 2020</p>
-                <p><b>Entwicklerteam:</b> Entwickler 2</p>
-                <p><b>Plattform:</b> PC, Xbox</p>
-                <p><b>Altersfreigabe:</b> USK 16</p>
-                <p><b>Version:</b> Deluxe</p>
+                <p class="title"><b>Titel:</b> Minecraft</p>
+                <p><b>Erscheinungsjahr:</b> 2014</p>
+                <p><b>Entwicklerteam:</b> Mojang</p>
+                <p><b>Plattform:</b> Playstatinon 3</p>
+                <p><b>Altersfreigabe:</b> USK 12</p>
+                <p><b>Version:</b> PAL</p>
                 <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
-                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85</b> NM+</p>
+                <p><b>Bewertet durch:</b> UKG-Grading</p>
+                <p><a href="https://archive.ukgraders.co.uk/graders_system/controllers/findToy.php"><b>Archive-NR:</b> VG004113</a></p>
             </div>
         </div>
     </div>
@@ -61,20 +67,20 @@
         <div class="game-item">
             <div class="game-item-image">
                 <button class="arrow left-arrow" onclick="changeImage(-1, 'game3')">&#10094;</button>
-                <img src="/assets/tlou_1.png" id="game3-image" alt="The Last of Us">
+                <img src="/assets/deadpool_1.jpeg" id="game3-image" alt="Deadpool">
                 <button class="arrow right-arrow" onclick="changeImage(1, 'game3')">&#10095;</button>
             </div>
             <div class="game-item-description">
-                <p class="title"><b>Titel:</b> The Last of Us</p>
+                <p class="title"><b>Titel:</b> Deadpool</p>
                 <p><b>Erscheinungsjahr:</b> 2013</p>
-                <p><b>Entwicklerteam:</b> Naughty Dog</p>
+                <p><b>Entwicklerteam:</b> High Moon Studios</p>
                 <p><b>Plattform:</b> Playstation 3</p>
                 <p><b>Altersfreigabe:</b> USK 18</p>
-                <p><b>Version:</b> PAL/GER</p>
+                <p><b>Version:</b> NTSC-UC</p>
                 <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
-                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
-                <p><a href="https://pixel-grading.com/blogs/grades/72133694.html">Full-Details</a></p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result"></b>/ 9.6 / A+</p>
+                <p><b>Bewertet durch:</b> Wata-Grading</p>
+                <p><a href="https://www.watagames.com/cert/details/594601-009">Full-Details</a></p>
             </div>
         </div>
 
@@ -82,19 +88,20 @@
         <div class="game-item">
             <div class="game-item-image">
                 <button class="arrow left-arrow" onclick="changeImage(-1, 'game4')">&#10094;</button><!-- OnClick-Namen vom Game ändernn -->
-                <img src="/assets/tlou_1.png" id="game4-image" alt="Spiel 4"><!-- "ALT" vom Game ändern -->
+                <img src="/assets/batman_1.jpeg" id="game4-image" alt="Batman: Arkham Asylum"><!-- "ALT" vom Game ändern -->
                 <button class="arrow right-arrow" onclick="changeImage(1, 'game4')">&#10095;</button><!-- OnClick-Namen vom Game ändern -->
             </div>
             <div class="game-item-description">
-                <p class="title"><b>Titel:</b> Spiel 2</p>
-                <p><b>Erscheinungsjahr:</b> 2020</p>
-                <p><b>Entwicklerteam:</b> Entwickler 2</p>
-                <p><b>Plattform:</b> PC, Xbox</p>
+                <p class="title"><b>Titel:</b> Batman: Arkham Asylum</p>
+                <p><b>Erscheinungsjahr:</b> 2009</p>
+                <p><b>Entwicklerteam:</b> Eidos, WB, rocksteady</p>
+                <p><b>Plattform:</b> Playstation 3</p>
                 <p><b>Altersfreigabe:</b> USK 16</p>
-                <p><b>Version:</b> Deluxe</p>
+                <p><b>Version:</b> NTSC-UC</p>
                 <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
-                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result"></b>9.4 / A</p>
+                <p><b>Bewertet durch:</b> Wata-Grading</p>
+                <p><a href="https://www.watagames.com/cert/details/590708-002">Full-Details</a></p>
             </div>
         </div>
     </div>
