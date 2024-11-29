@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading-Game-List</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Grading-Game-List</h1>
+    </header>
+
+    <!-- Weitere Zeile mit jeweils zwei Spielen hinzufügen -->
+    <div class="game-container">
+        <!-- Game 1 -->
+        <div class="game-item">
+            <div class="game-item-image">
+                <button class="arrow left-arrow" onclick="changeImage(-1, 'game1')">&#10094;</button>
+                <img src="/assets/tlou_1.png" id="game1-image" alt="The Last of Us">
+                <button class="arrow right-arrow" onclick="changeImage(1, 'game1')">&#10095;</button>
+            </div>
+            <div class="game-item-description">
+                <p class="title"><b>Titel:</b> The Last of Us</p>
+                <p><b>Erscheinungsjahr:</b> 2013</p>
+                <p><b>Entwicklerteam:</b> Naughty Dog</p>
+                <p><b>Plattform:</b> Playstation 3</p>
+                <p><b>Altersfreigabe:</b> USK 18</p>
+                <p><b>Version:</b> PAL/GER</p>
+                <p><b>Zustand:</b> Sealed</p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
+                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
+                <p><a href="https://pixel-grading.com/blogs/grades/72133694.html">Full-Details</a></p>
+            </div>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-item">
+            <div class="game-item-image">
+                <button class="arrow left-arrow" onclick="changeImage(-1, 'game2')">&#10094;</button>
+                <img src="/assets/tlou_1.png" id="game2-image" alt="Spiel 2">
+                <button class="arrow right-arrow" onclick="changeImage(1, 'game2')">&#10095;</button>
+            </div>
+            <div class="game-item-description">
+                <p class="title"><b>Titel:</b> Spiel 2</p>
+                <p><b>Erscheinungsjahr:</b> 2020</p>
+                <p><b>Entwicklerteam:</b> Entwickler 2</p>
+                <p><b>Plattform:</b> PC, Xbox</p>
+                <p><b>Altersfreigabe:</b> USK 16</p>
+                <p><b>Version:</b> Deluxe</p>
+                <p><b>Zustand:</b> Sealed</p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
+                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <!-- Game 3 -->
+        <div class="game-item">
+            <div class="game-item-image">
+                <button class="arrow left-arrow" onclick="changeImage(-1, 'game3')">&#10094;</button>
+                <img src="/assets/tlou_1.png" id="game3-image" alt="The Last of Us">
+                <button class="arrow right-arrow" onclick="changeImage(1, 'game3')">&#10095;</button>
+            </div>
+            <div class="game-item-description">
+                <p class="title"><b>Titel:</b> The Last of Us</p>
+                <p><b>Erscheinungsjahr:</b> 2013</p>
+                <p><b>Entwicklerteam:</b> Naughty Dog</p>
+                <p><b>Plattform:</b> Playstation 3</p>
+                <p><b>Altersfreigabe:</b> USK 18</p>
+                <p><b>Version:</b> PAL/GER</p>
+                <p><b>Zustand:</b> Sealed</p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
+                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
+                <p><a href="https://pixel-grading.com/blogs/grades/72133694.html">Full-Details</a></p>
+            </div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-item">
+            <div class="game-item-image">
+                <button class="arrow left-arrow" onclick="changeImage(-1, 'game4')">&#10094;</button><!-- OnClick-Namen vom Game ändernn -->
+                <img src="/assets/tlou_1.png" id="game4-image" alt="Spiel 4"><!-- "ALT" vom Game ändern -->
+                <button class="arrow right-arrow" onclick="changeImage(1, 'game4')">&#10095;</button><!-- OnClick-Namen vom Game ändern -->
+            </div>
+            <div class="game-item-description">
+                <p class="title"><b>Titel:</b> Spiel 2</p>
+                <p><b>Erscheinungsjahr:</b> 2020</p>
+                <p><b>Entwicklerteam:</b> Entwickler 2</p>
+                <p><b>Plattform:</b> PC, Xbox</p>
+                <p><b>Altersfreigabe:</b> USK 16</p>
+                <p><b>Version:</b> Deluxe</p>
+                <p><b>Zustand:</b> Sealed</p>
+                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
+                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="home.js"></script>
+</body>
+</html>
