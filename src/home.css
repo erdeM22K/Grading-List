@@ -28,18 +28,34 @@ header h1:hover {
     cursor: pointer;
 }
 
-#searchbar{
+#searchbar {
     margin: 16px 0;
-    width: 20%;
-    border-radius: 8px;
-    height: 26px;
-    border: rgba(0, 0, 0, 0.5);;
+    width: 30%;
+    border-radius: 20px; 
+    height: 40px;
+    padding: 10px 15px;
+    font-size: 16px; 
+    border: 2px solid #ddd;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
 }
 
-#searchbar:hover{
-    border: solid 2px #42b983;
-    transition: border 0.1s;
-    cursor: pointer;
+#searchbar::placeholder {
+    color: #bbb; 
+    font-style: italic; 
+}
+
+#searchbar:focus {
+    border-color: #42b983; 
+    background-color: #fff; 
+    box-shadow: 0 4px 10px rgba(66, 185, 131, 0.6); 
+    outline: none; 
+}
+
+#searchbar:hover {
+    border-color: #42b983; 
+    cursor: pointer; 
 }
 
 .header-nav a {
