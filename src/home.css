@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    height: 125px;
+    height: 200px;
     background: linear-gradient(135deg, #363438, #565150);
     display: flex;
     justify-content: center;
@@ -28,8 +28,18 @@ header h1:hover {
     cursor: pointer;
 }
 
-.header-nav{
-    margin-bottom: 22px;
+#searchbar{
+    margin: 16px 0;
+    width: 20%;
+    border-radius: 8px;
+    height: 26px;
+    border: rgba(0, 0, 0, 0.5);;
+}
+
+#searchbar:hover{
+    border: solid 2px #42b983;
+    transition: border 0.1s;
+    cursor: pointer;
 }
 
 .header-nav a {
@@ -130,5 +140,12 @@ header h1:hover {
 
     .game-container{
         padding: 12px;
+    }
+
+    #searchbar{
+        margin: 16px 0;
+        width: 75%;
+        border-radius: 8px;
+        height: 26px;
     }
 }

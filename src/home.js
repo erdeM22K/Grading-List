@@ -36,3 +36,33 @@ function changeImage(direction, gameId) {
     currentImageIndex[gameId] = (currentImageIndex[gameId] + direction + images.length) % images.length;
     document.getElementById(`${gameId}-image`).src = images[currentImageIndex[gameId]];
 }
+
+const search = document.getElementById('searchbar');
+
+search.addEventListener('input', function() {
+    searchGame();  // Funktion aufrufen, wenn der Nutzer etwas eingibt
+});
+
+function searchGame() {
+    const searchTerm = search.value.toLowerCase();  // Suchbegriff in Kleinbuchstaben umwandeln
+    const games = document.querySelectorAll('.game-item');
+
+    games.forEach(game => {
+        const details = game.querySelectorAll('.game-item-description p');  // Alle p-Elemente sammeln
+
+        // Überprüfen, ob ein p-Element den Suchbegriff enthält
+        let matchFound = false;
+        details.forEach(detail => {
+            if (detail.innerText.toLowerCase().includes(searchTerm)) {
+                matchFound = true;
+            }
+        });
+
+        // Spiel anzeigen/verbergen je nach Treffer
+        if (matchFound) {
+            game.style.display = '';  // Anzeigen, wenn ein Treffer gefunden wurde
+        } else {
+            game.style.display = 'none';  // Verstecken, wenn kein Treffer vorhanden
+        }
+    });
+}
