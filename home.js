@@ -1,13 +1,13 @@
 //Neue Game-Array anlegen
 const gameImages = {
     game1: [
-        'assets/tlou_1.png',
-        'assets/tlou_2.png',
-        'assets/tlou_3.png',
-        'assets/tlou_4.png',
+        'tlou_1.png',
+        'tlou_2.png',
+        'tlou_3.png',
+        'tlou_4.png',
     ],
     game2: [
-        'assets/minecraft_1.jpg',
+        '@assets/minecraft_1.jpg',
         'assets/minecraft_2.jpg',
     ],
     game3: [
