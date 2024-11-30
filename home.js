@@ -7,8 +7,8 @@ const gameImages = {
         'tlou_4.png',
     ],
     game2: [
-        '@assets/minecraft_1.jpg',
-        'assets/minecraft_2.jpg',
+        'Grading-List/assets/minecraft_1.jpg',
+        'Grading-List/assets/minecraft_2.jpg',
     ],
     game3: [
         'assets/deadpool_1.jpeg',
