@@ -1,24 +1,24 @@
 //Neue Game-Array anlegen
 const gameImages = {
     game1: [
-        '/assets/tlou_1.png',
-        '/assets/tlou_2.png',
-        '/assets/tlou_3.png',
-        '/assets/tlou_4.png',
+        'assets/tlou_1.png',
+        'assets/tlou_2.png',
+        'assets/tlou_3.png',
+        'assets/tlou_4.png',
     ],
     game2: [
-        '/assets/minecraft_1.jpg',
-        '/assets/minecraft_2.jpg',
+        'assets/minecraft_1.jpg',
+        'assets/minecraft_2.jpg',
     ],
     game3: [
-        '/assets/deadpool_1.jpeg',
-        '/assets/deadpool_2.jpeg',
-        '/assets/deadpool_3.jpg',
+        'assets/deadpool_1.jpeg',
+        'assets/deadpool_2.jpeg',
+        'assets/deadpool_3.jpg',
     ],
     game4: [
-        '/assets/batman_1.jpeg',
-        '/assets/batman_2.jpeg',
-        '/assets/batman_3.jpg',
+        'assets/batman_1.jpeg',
+        'assets/batman_2.jpeg',
+        'assets/batman_3.jpg',
     ]
 };
 
