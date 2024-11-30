@@ -38,12 +38,7 @@ header h1:hover {
     border: 2px solid #ddd;
     background-color: #f9f9f9; 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
-    transition: all 0.3s ease; 
-}
-
-#searchbar::placeholder {
-    color: #bbb; 
-    font-style: italic; 
+    transition: all 0.3s ease, transform 0.3s ease; 
 }
 
 #searchbar:focus {
@@ -51,6 +46,13 @@ header h1:hover {
     background-color: #fff; 
     box-shadow: 0 4px 10px rgba(66, 185, 131, 0.6); 
     outline: none; 
+    transform: scale(1.1); 
+}
+
+
+#searchbar::placeholder {
+    color: #bbb; 
+    font-style: italic; 
 }
 
 #searchbar:hover {
@@ -88,7 +90,7 @@ header h1:hover {
     padding: 20px;
     width: 375px;
     margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .game-item-image {
@@ -96,8 +98,9 @@ header h1:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px rgba(0, 0, 0, 0.2);
-    border-radius: 11px;
+    border-color: #42b983; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 .arrow {
