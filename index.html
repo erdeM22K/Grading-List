@@ -3,135 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grading-Game-List</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Landingpage</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <header>
-        <h1>Grading-Game-List</h1>
-        <p>by erdeM </p>
-        <nav class="header-nav">
-            <a href="#">Home</a>
-            <a href="#">Über uns</a>
-            <a href="#">Kontakt</a>
-        </nav>
-        <input id="searchbar" type="text" placeholder="Suche..."></input>
-    </header>
-
-    <!-- Weitere Zeile mit jeweils zwei Spielen hinzufügen -->
-    <div class="game-container">
-        <!-- Game 1 -->
-        <div class="game-item">
-            <div class="game-item-image">
-                <button class="arrow left-arrow" onclick="changeImage(-1, 'game1')">&#10094;</button>
-                <img src="./assets/tlou_1.png" id="game1-image" alt="The Last of Us">
-                <button class="arrow right-arrow" onclick="changeImage(1, 'game1')">&#10095;</button>
-            </div>
-            <div class="game-item-description">
-                <p class="title"><b>Titel:</b> The Last of Us</p>
-                <p><b>Erscheinungsjahr:</b> 2013</p>
-                <p><b>Entwicklerteam:</b> Naughty Dog</p>
-                <p><b>Plattform:</b> Playstation 3 (PS3)</p>
-                <p><b>Altersfreigabe:</b> USK 18</p>
-                <p><b>Version:</b> PAL/GER</p>
-                <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85+</b>/ 90+ / 80+</p>
-                <p><b>Bewertet durch:</b> Pixel Grading GmbH</p>
-                <p><a href="https://pixel-grading.com/blogs/grades/72133694.html">Full-Details</a></p>
-            </div>
-        </div>
-
-        <!-- Game 2 -->
-        <div class="game-item">
-            <div class="game-item-image">
-                <button class="arrow left-arrow" onclick="changeImage(-1, 'game2')">&#10094;</button>
-                <img src="./assets/minecraft_1.jpg" id="game2-image" alt="Minecraft">
-                <button class="arrow right-arrow" onclick="changeImage(1, 'game2')">&#10095;</button>
-            </div>
-            <div class="game-item-description">
-                <p class="title"><b>Titel:</b> Minecraft</p>
-                <p><b>Erscheinungsjahr:</b> 2014</p>
-                <p><b>Entwicklerteam:</b> Mojang</p>
-                <p><b>Plattform:</b> Playstation 3 (PS3)</p>
-                <p><b>Altersfreigabe:</b> USK 12</p>
-                <p><b>Version:</b> PAL</p>
-                <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result">85</b> NM+</p>
-                <p><b>Bewertet durch:</b> UKG-Grading</p>
-                <p><a href="https://archive.ukgraders.co.uk/graders_system/controllers/findToy.php"><b>Archive-NR:</b> VG004113</a></p>
-            </div>
-        </div>
+    <div class ="section1">
+        <div class="text1"> Collection </div>
     </div>
-
-    <div class="game-container">
-        <!-- Game 3 -->
-        <div class="game-item">
-            <div class="game-item-image">
-                <button class="arrow left-arrow" onclick="changeImage(-1, 'game3')">&#10094;</button>
-                <img src="./assets/deadpool_1.jpeg" id="game3-image" alt="Deadpool">
-                <button class="arrow right-arrow" onclick="changeImage(1, 'game3')">&#10095;</button>
-            </div>
-            <div class="game-item-description">
-                <p class="title"><b>Titel:</b> Deadpool</p>
-                <p><b>Erscheinungsjahr:</b> 2013</p>
-                <p><b>Entwicklerteam:</b> High Moon Studios</p>
-                <p><b>Plattform:</b> Playstation 3 (PS3)</p>
-                <p><b>Altersfreigabe:</b> USK 18</p>
-                <p><b>Version:</b> NTSC-US</p>
-                <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Box/Seal):</b> <b class="grade-result"></b>/ 9.6 / A+</p>
-                <p><b>Bewertet durch:</b> Wata-Grading</p>
-                <p><a href="https://www.watagames.com/cert/details/594601-009">Full-Details</a></p>
-            </div>
+    <div class ="section2">
+        <div class="title">
+            <h5>Willkommen zur <br>Videospiel-Sammlung </h5>
         </div>
-
-        <!-- Game 4 -->
-        <div class="game-item">
-            <div class="game-item-image">
-                <button class="arrow left-arrow" onclick="changeImage(-1, 'game4')">&#10094;</button><!-- OnClick-Namen vom Game ändernn -->
-                <img src="./assets/batman_1.jpeg" id="game4-image" alt="Batman: Arkham Asylum"><!-- "ALT" vom Game ändern -->
-                <button class="arrow right-arrow" onclick="changeImage(1, 'game4')">&#10095;</button><!-- OnClick-Namen vom Game ändern -->
-            </div>
-            <div class="game-item-description">
-                <p class="title"><b>Titel:</b> Batman: Arkham Asylum</p>
-                <p><b>Erscheinungsjahr:</b> 2009</p>
-                <p><b>Entwicklerteam:</b> Eidos, WB, rocksteady</p>
-                <p><b>Plattform:</b> Playstation 3 (PS3)</p>
-                <p><b>Altersfreigabe:</b> USK 16</p>
-                <p><b>Version:</b> NTSC-US</p>
-                <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Box/Seal):</b> <b class="grade-result"></b>9.4 / A</p>
-                <p><b>Bewertet durch:</b> Wata-Grading</p>
-                <p><a href="https://www.watagames.com/cert/details/590708-002">Full-Details</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="game-container">
-        <!-- Game 5 -->
-        <div class="game-item">
-            <div class="game-item-image">
-                <button class="arrow left-arrow" onclick="changeImage(-1, 'game5')">&#10094;</button>
-                <img src="./assets/ruleofrose_1.png" id="game5-image" alt="RuleOfRose">
-                <button class="arrow right-arrow" onclick="changeImage(1, 'game5')">&#10095;</button>
-            </div>
-            <div class="game-item-description">
-                <p class="title"><b>Titel:</b> Rule of Rose</p>
-                <p><b>Erscheinungsjahr:</b> 2006</p>
-                <p><b>Entwicklerteam:</b> 505 GAME STREET</p>
-                <p><b>Plattform:</b> Playstation 2 (PS2)</p>
-                <p><b>Altersfreigabe:</b> PEGI 16</p>
-                <p><b>Version:</b> PAL/UK</p>
-                <p><b>Zustand:</b> Sealed</p>
-                <p><b>Bewertung (Gesamt/Box/Seal):</b> <b class="grade-result"></b>TBD</p>
-                <p><b>Bewertet durch:</b> Pixel-Grading</p>
-                <p><a href="">Full-Details (Coming Soon)</a></p>
-            </div>
+        <div class="boxes">
+            <a href="./graded-list.html" class="left-box">
+                <div class="game-box">
+                    <p class="box-title"> <b>GGC</b> <br> Graded-Games-Collection </p>
+                    <div class="image">
+                        <img src="./assets/game-picture.png" alt="game-picture" width="300px" height="200px">
+                    </div>
+                </div>
+            </a>
+            <a href="" class="right-box">
+                <div class="game-box">
+                    <p class="box-title"> <b>GC</b> <br> Games-Collection </p>
+                    <div class="image">
+                        <img src="./assets/graded-games.png" alt="grading-picture" width="300px" height="200px">
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="home.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
