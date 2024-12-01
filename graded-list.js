@@ -95,7 +95,7 @@ gsap.fromTo("header *",{
     {
     y: 0,
     duration: 1,
-    stagger: 0.4,
+    stagger: 0.1,
     opacity: 1,
 });
 
@@ -105,7 +105,7 @@ gsap.utils.toArray('.game-item').forEach((item, index) => {
         y: -10,
         opacity: 0,
     }, {
-        delay: index < 2 ? 3.8 : 0,
+        delay: index < 2 ? 2 : 0,
         y: 0,
         duration: 1,
         opacity: 1,
