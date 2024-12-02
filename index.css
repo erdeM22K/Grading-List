@@ -152,7 +152,6 @@ body {
         justify-content: flex-start;  
         align-items: center;      
         background: linear-gradient(135deg, #363438, #565150);
-        position: relative;
         flex-direction: column;
     }
 
