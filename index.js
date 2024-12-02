@@ -1,4 +1,4 @@
-/*gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(".title", {
     y: -10,
@@ -55,4 +55,3 @@ gsap.fromTo(".right-box", {
         once: true,
     }
 });
-*/
