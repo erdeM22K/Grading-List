@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+/*gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(".title", {
     y: -10,
@@ -18,7 +18,7 @@ gsap.fromTo(".title", {
     }
 });
 
-/*
+
 gsap.fromTo(".left-box", {
     x: -500,
     opacity: 0,
@@ -56,22 +56,3 @@ gsap.fromTo(".right-box", {
     }
 });
 */
-gsap.registerPlugin(ScrollTrigger);
-
-// Hier wird `ScrollTrigger.batch()` verwendet, um mehrere Boxen gleichzeitig zu animieren
-ScrollTrigger.batch(".left-box, .right-box", {
-  start: "top bottom",  // Der Startpunkt der Animation, wenn das Element zu 80% im Viewport ist
-  onEnter: (batch) => {
-    gsap.fromTo(batch, {
-      opacity: 0,
-      x: -500,
-    }, {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      ease: "power2.out",
-    });
-  },
-  once: true,  // Animation nur einmal abspielen
-  markers: true,  // Hilfsmarkierungen anzeigen, um zu prüfen, ob der ScrollTrigger funktioniert
-});
