@@ -69,7 +69,7 @@ body {
     background: linear-gradient(135deg, #363438, #565150);
     position: relative;
     flex-direction: column;
-    margin-bottom: 15vh;
+    padding-bottom: 15vh;
 }
 
 .title{
@@ -165,5 +165,9 @@ body {
 
     .text1{
         font-size: 8vh;
+    }
+
+    .section1 .text1{
+        top: 35%;
     }
 }

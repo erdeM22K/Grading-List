@@ -36,3 +36,15 @@ gsap.fromTo(".right-box", {
     duration: 1,
     ease: "power2.out",
 });
+
+gsap.fromTo(".text1", {
+    y: -500,
+    opacity: 0,
+},
+{
+    delay: 0,
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    ease: "power2.out",
+});
