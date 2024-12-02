@@ -12,9 +12,10 @@ gsap.fromTo(".title", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: ".section2",
-        start: "top 95%",
-        toggleActions: "play resume reset resume",
+        start: "top 98%",
+        toggleActions: "play none none none",
         once: true,
+        markers: true,
     }
 });
 
@@ -30,10 +31,11 @@ gsap.fromTo(".left-box", {
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: ".title",
-        start: "top 90%",
-        toggleActions: "play resume reset resume",
+        trigger: ".section2",
+        start: "top 97%",
+        toggleActions: "play none none none",
         once: true,
+        markers: true,
     }
 });
 
@@ -48,9 +50,10 @@ gsap.fromTo(".right-box", {
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: ".title",
-        start: "top 90%",
-        toggleActions: "play resume reset resume",
+        trigger: ".section2",
+        start: "top 95%",
+        toggleActions: "play none none none",
         once: true,
+        markers: true,
     }
 });
