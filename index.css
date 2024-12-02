@@ -1,6 +1,6 @@
 html{
-    height: 100%;
-    overflow: scroll;
+    height: 100vh;
+    overflow: hidden;
     font-family: 'Franklin Gothic Heavy';
 }
 
