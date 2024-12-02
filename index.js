@@ -4,6 +4,16 @@ window.addEventListener('resize', function() {
     ScrollTrigger.refresh(); // Aktualisiere den ScrollTrigger bei Größenänderung
 });
 
+gsap.utils.toArray(".section2").forEach((section) => {
+    ScrollTrigger.create({
+        trigger: section,
+        start: "top bottom",
+        end: "bottom top",
+        markers: true,
+        toggleActions: "play pause reverse reset",
+    });
+});
+
 gsap.fromTo(".title", {
     y: -10,
     opacity: 0,
@@ -37,6 +47,7 @@ gsap.fromTo(".left-box", {
         start: "top bottom",
         toggleActions: "play resume reset resume",
         once: true,
+        markers: true,
     }
 });
 
