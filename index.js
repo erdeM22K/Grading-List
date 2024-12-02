@@ -12,7 +12,7 @@ gsap.fromTo(".title", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: ".section2",
-        start: "top 100%",
+        start: "top 90%",
         toggleActions: "play resume reset resume",
         once: true,
     }
@@ -31,7 +31,7 @@ gsap.fromTo(".left-box", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: ".section2",
-        start: "top 100%",
+        start: "top 85%",
         toggleActions: "play resume reset resume",
         once: true,
     }
@@ -49,7 +49,7 @@ gsap.fromTo(".right-box", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: ".section2",
-        start: "top 100%",
+        start: "top 85%",
         toggleActions: "play resume reset resume",
         once: true,
     }
