@@ -1,19 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-window.addEventListener('resize', function() {
-    ScrollTrigger.refresh(); // Aktualisiere den ScrollTrigger bei Größenänderung
-});
-
-gsap.utils.toArray(".section2").forEach((section) => {
-    ScrollTrigger.create({
-        trigger: section,
-        start: "top bottom",
-        end: "bottom top",
-        markers: true,
-        toggleActions: "play pause reverse reset",
-    });
-});
-
 gsap.fromTo(".title", {
     y: -10,
     opacity: 0,
@@ -32,6 +18,7 @@ gsap.fromTo(".title", {
     }
 });
 
+/*
 gsap.fromTo(".left-box", {
     x: -500,
     opacity: 0,
@@ -67,4 +54,24 @@ gsap.fromTo(".right-box", {
         toggleActions: "play resume reset resume",
         once: true,
     }
+});
+*/
+gsap.registerPlugin(ScrollTrigger);
+
+// Hier wird `ScrollTrigger.batch()` verwendet, um mehrere Boxen gleichzeitig zu animieren
+ScrollTrigger.batch(".left-box, .right-box", {
+  start: "top bottom",  // Der Startpunkt der Animation, wenn das Element zu 80% im Viewport ist
+  onEnter: (batch) => {
+    gsap.fromTo(batch, {
+      opacity: 0,
+      x: -500,
+    }, {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      ease: "power2.out",
+    });
+  },
+  once: true,  // Animation nur einmal abspielen
+  markers: true,  // Hilfsmarkierungen anzeigen, um zu prüfen, ob der ScrollTrigger funktioniert
 });

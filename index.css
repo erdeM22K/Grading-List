@@ -20,7 +20,6 @@ body {
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    overflow: auto;
 }
 
 .section1::before{
@@ -69,7 +68,6 @@ body {
     background: linear-gradient(135deg, #363438, #565150);
     position: relative;
     flex-direction: column;
-    overflow: auto;
 }
 
 .title{
