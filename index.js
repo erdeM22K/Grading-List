@@ -5,10 +5,10 @@ gsap.fromTo(".title", {
     opacity: 0,
 },
 {
-    delay: 2,
+    delay: 4,
     opacity: 1,
     y: 0,
-    duration: 2,
+    duration: 1,
     ease: "power2.out",
 });
 
@@ -18,7 +18,7 @@ gsap.fromTo(".left-box", {
     opacity: 0,
 },
 {
-    delay: 3,
+    delay: 5,
     opacity: 1,
     x: 0,
     duration: 1,
@@ -30,7 +30,7 @@ gsap.fromTo(".right-box", {
     opacity: 0,
 },
 {
-    delay: 3,
+    delay: 5,
     opacity: 1,
     x: 0,
     duration: 1,
