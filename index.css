@@ -69,6 +69,7 @@ body {
     background: linear-gradient(135deg, #363438, #565150);
     position: relative;
     flex-direction: column;
+    margin-bottom: 15vh;
 }
 
 .title{
@@ -91,6 +92,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 5vh;
+    padding-bottom: 5vh;
 }
 
 .left-box, .right-box{
