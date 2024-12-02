@@ -134,6 +134,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .section2{
+        min-height: 90vh;
+    }
+
     .boxes{
         display: flex;
         flex-direction: column;
