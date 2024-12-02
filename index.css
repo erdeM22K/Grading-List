@@ -2,6 +2,7 @@ html{
     height: 100vh;
     overflow: hidden;
     font-family: 'Franklin Gothic Heavy';
+    margin: 5px;
 }
 
 body {
@@ -60,7 +61,7 @@ body {
 }
 
 .section2 {
-    width: 100%;
+    width: 100%; 
     height: 100%;
     display: flex;
     justify-content: flex-start;  /* Horizontal zentriert */
