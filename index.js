@@ -5,7 +5,7 @@ gsap.fromTo(".title", {
     opacity: 0,
 },
 {
-    delay: 0,
+    delay: 2,
     opacity: 1,
     y: 0,
     duration: 2,
