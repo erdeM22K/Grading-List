@@ -1,5 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
+window.addEventListener('resize', function() {
+    ScrollTrigger.refresh(); // Aktualisiere den ScrollTrigger bei Größenänderung
+});
+
 gsap.fromTo(".title", {
     y: -10,
     opacity: 0,
@@ -30,7 +34,7 @@ gsap.fromTo(".left-box", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: ".section2",
-        start: "top 80%",
+        start: "top bottom",
         toggleActions: "play resume reset resume",
         once: true,
     }
@@ -48,7 +52,7 @@ gsap.fromTo(".right-box", {
     ease: "power2.out",
     scrollTrigger: {
         trigger: ".section2",
-        start: "top 80%",
+        start: "top bottom",
         toggleActions: "play resume reset resume",
         once: true,
     }
