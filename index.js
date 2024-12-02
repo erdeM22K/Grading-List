@@ -11,8 +11,8 @@ gsap.fromTo(".title", {
     duration: 2,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: ".section2",
-        start: "top 98%",
+        trigger: ".boxes",
+        start: "top 95%",
         toggleActions: "play none none none",
         once: true,
         markers: true,
@@ -31,8 +31,8 @@ gsap.fromTo(".left-box", {
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: ".section2",
-        start: "top 97%",
+        trigger: ".boxes",
+        start: "top 90%",
         toggleActions: "play none none none",
         once: true,
         markers: true,
@@ -50,8 +50,8 @@ gsap.fromTo(".right-box", {
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
-        trigger: ".section2",
-        start: "top 95%",
+        trigger: ".boxes",
+        start: "top 90%",
         toggleActions: "play none none none",
         once: true,
         markers: true,
