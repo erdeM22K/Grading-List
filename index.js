@@ -1,3 +1,7 @@
+window.addEventListener('resize', function() {
+    ScrollTrigger.refresh();
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(".title", {
@@ -15,6 +19,7 @@ gsap.fromTo(".title", {
         start: "top center",
         toggleActions: "play resume reset resume",
         once: true,
+        invalidateOnRefresh: true,
     }
 });
 
@@ -34,7 +39,7 @@ gsap.fromTo(".left-box", {
         start: "top bottom",
         toggleActions: "play resume reset resume",
         once: true,
-        markers: true,
+        invalidateOnRefresh: true,
     }
 });
 
@@ -53,5 +58,6 @@ gsap.fromTo(".right-box", {
         start: "top bottom",
         toggleActions: "play resume reset resume",
         once: true,
+        invalidateOnRefresh: true,
     }
 });
