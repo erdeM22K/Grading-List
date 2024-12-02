@@ -8,6 +8,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    padding: 0;
     background: #222;
     perspective: 1px;
     transform-style: preserve-3d;
@@ -146,8 +147,8 @@ body {
         width: 100%; 
         min-height: 100vh;
         display: flex;
-        justify-content: flex-start;  /* Horizontal zentriert */
-        align-items: center;       /* Vertikal zentriert */
+        justify-content: flex-start;  
+        align-items: center;      
         background: linear-gradient(135deg, #363438, #565150);
         position: relative;
         flex-direction: column;
